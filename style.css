@@ -1,3 +1,4 @@
+/* --- General Site Styles --- */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -8,12 +9,14 @@ body {
     line-height: 1.6;
     padding-top: 50px;
 }
+
 code, pre {
     font-family: "Courier New", Courier, monospace;
     background-color: rgba(255,255,255,0.05);
     padding: 4px 6px;
     border-radius: 4px;
 }
+
 header {
     position: fixed;
     top: 0;
@@ -47,6 +50,7 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
+
 section {
     margin-bottom: 40px;
 }
@@ -69,4 +73,69 @@ a {
 }
 a:hover {
     color: #8be9fd;
+}
+
+/* --- Project Section Styles --- */
+.project {
+    margin-bottom: 40px;
+}
+
+/* Buttons container */
+.project-buttons {
+    margin-top: 0.5em;
+}
+
+/* Show Details / GitHub buttons */
+.project-toggle,
+.project-toggle:link,
+.project-toggle:visited {
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: rgba(55, 63, 108, 0.95);
+    color: #50fa7b;
+    border: 1px solid #50fa7b;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-family: inherit;        /* match button font */
+    font-size: 1rem;             /* match button font size */
+    line-height: 1.5;            /* consistent height */
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+}
+
+.project-toggle:hover {
+    background-color: #50fa7b;
+    color: #1a1e38;
+}
+
+
+/* Hidden details */
+.hidden {
+    display: none;
+}
+
+/* Detailed text styling */
+.project-details p {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #cccccc;
+    line-height: 1.4;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 600px) {
+    /* Stack buttons vertically on small screens */
+    .project-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-toggle {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
 }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My modern GitHub user page">
+  <title>My GitHub Page</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+  <header>
+  <nav>
+    <a href="./index.html">Home</a> |
+    <a href="./projects.html">Projects</a> |
+    <a href="./about.html">About me</a>
+  </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Projects</h1>
+
+      <p>
+        This page contains a selection of personal and professional projects
+        focused on systems, network, and infrastructure automation.
+        Most of these tools were built to solve real operational problems
+        and improve reliability or efficiency.
+      </p>
+
+      <p>
+        The projects here range from small, focused utilities to larger
+        automation workflows, primarily written in Bash, PowerShell, and Python.
+      </p>
+
+      <p>
+        If you find any of this software useful and would like to support
+        continued development, you can leave an optional tip on <strong>
+        <a href="https://ko-fi.com/mitchricker" target="_blank" rel="noopener noreferrer">
+          Ko-fi</a></strong>.
+      </p>
+    </section>
+    <hr>
+
+    <section class="project">
+      <h2>PSUserMigrate</h2>
+
+      <p class="project-teaser">
+        <strong>PSUserMigrate</strong> is a PowerShell tool that automates user environment migration,
+        making workstation refreshes, break/fix scenarios, and user migrations faster and safer.
+      </p>
+
+      <div class="project-buttons">
+        <!-- Show details toggle -->
+        <button class="project-toggle" onclick="this.closest('.project').querySelector('.project-details').classList.toggle('hidden');">
+          Show Details
+        </button>
+
+        <!-- GitHub repo button -->
+        <a href="https://github.com/mitchricker/PSUserMigrate" target="_blank" rel="noopener noreferrer" class="project-toggle">
+          View on GitHub
+        </a>
+      </div>
+
+      <!-- Hidden detailed description -->
+      <div class="project-details hidden">
+        <p>
+          PSUserMigrate captures and restores user settings—including browsers, Wi-Fi profiles, VPNs,
+          Outlook signatures, mapped drives, printers, and Sticky Notes—on the same or another machine.
+          It supports selective component capture, optional AES-256 ZIP encryption via 7-Zip, automatic
+          7-Zip installation if needed, and generates a migration manifest for auditing. Designed for
+          helpdesk and field use, it reduces operational overhead while ensuring consistent, recoverable
+          migrations.
+        </p>
+      </div>
+    </section>
+    <hr>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mitch Ricker. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+</body>
+</html>
