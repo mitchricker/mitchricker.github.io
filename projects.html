@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mitch Ricker - Automating.Systems">
+  <meta name="description" content="My modern GitHub user page">
   <title>Mitch Ricker - Automating.Systems</title>
   <!-- Link to CSS -->
   <link rel="stylesheet" href="style.css">
@@ -66,25 +66,50 @@
       <!-- Hidden detailed description -->
       <div class="project-details hidden">
         <p>
-          PSUserMigrate captures and restores user settings including browsers, Wi-Fi profiles, VPNs,
+          PSUserMigrate captures and restores user settings including browsers, Wi-Fi profiles, VPNs, 
           Outlook signatures, mapped drives, printers, and Sticky Notes, on the same or another machine.
           It supports selective component capture, optional AES-256 ZIP encryption via 7-Zip, automatic
-          7-Zip installation if needed, and generates a migration manifest for auditing. Designed for
-          helpdesk and field use, it reduces operational overhead while ensuring consistent, recoverable
-          migrations.
+          7-Zip installation if needed, and generates a migration manifest for auditing. Designed for 
+          helpdesk and field use, it reduces operational overhead while ensuring consistent, recoverable migrations.                                configurations from being introduced during automation or system setup.
         </p>
       </div>
     </section>
     <hr>
+    <section class="project">
+      <h2>SecureWinRM</h2>
+
+      <p class="project-teaser">
+        <strong>SecureWinRM</strong> is a PowerShell module that automates hardened WinRM configuration.
+      </p>
+
+      <div class="project-buttons">
+        <!-- Show details toggle -->
+        <button class="project-toggle" onclick="this.closest('.project').querySelector('.project-details').classList.toggle('hidden');">
+          Show Details
+        </button>
+
+        <!-- GitHub repo button -->
+        <a href="https://github.com/mitchricker/SecureWinRM" target="_blank" rel="noopener noreferrer" class="project-toggle">
+          View on GitHub
+        </a>
+      </div>
+
+      <!-- Hidden detailed description -->
+      <div class="project-details hidden">
+        <p>
+          SecureWinRM configures Windows Remote Management with opinionated security defaults, including HTTPS
+          only transport and strong authentication. The goal is to remove ambiguity and prevent insecure WinRM
+          configurations from being introduced during automation or system setup.
+        </p>
+      </div>
+    </section>
+    <hr>
+
+
   </main>
-  
+
   <footer>
     <p>&copy; 2026 Mitch Ricker. Built with HTML, CSS and JavaScript.</p>
   </footer>
-  
 </body>
 </html>
-
-
-
-
