@@ -141,5 +141,7 @@ a:hover {
 }
 nav a.active {
   font-weight: bold;
-  text-decoration: underline;
+  background-color: rgba(80, 250, 123, 0.2);
+  border-radius: 4px;
+  padding: 2px 4px;
 }
