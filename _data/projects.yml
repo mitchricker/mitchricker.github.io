@@ -1,0 +1,17 @@
+- name: PSUserMigrate
+  teaser: "PSUserMigrate is a PowerShell tool that automates user environment migration, making workstation refreshes, break/fix scenarios, and user migrations faster and safer."
+  repo: "PSUserMigrate"
+  details: |
+    PSUserMigrate captures and restores user settings including browsers, Wi-Fi profiles, VPNs, 
+    Outlook signatures, mapped drives, printers, and Sticky Notes, on the same or another machine.
+    It supports selective component capture, optional AES-256 ZIP encryption via 7-Zip, automatic
+    7-Zip installation if needed, and generates a migration manifest for auditing. Designed for 
+    helpdesk and field use, it reduces operational overhead while ensuring consistent, recoverable migrations.
+
+- name: SecureWinRM
+  teaser: "SecureWinRM is a PowerShell module that automates hardened WinRM configuration."
+  repo: "SecureWinRM"
+  details: |
+    SecureWinRM configures Windows Remote Management with opinionated security defaults,
+    including HTTPS-only transport and strong authentication. It prevents insecure WinRM
+    configurations from being introduced during automation or system setup.
