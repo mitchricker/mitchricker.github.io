@@ -139,3 +139,7 @@ a:hover {
         text-align: center;
     }
 }
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
