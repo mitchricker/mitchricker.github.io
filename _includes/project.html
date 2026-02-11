@@ -1,0 +1,26 @@
+<section class="project">
+  <h2>{{ include.name }}</h2>
+
+  <p class="project-teaser">{{ include.teaser }}</p>
+
+  <div class="project-buttons">
+    {% if include.details %}
+  <button class="project-toggle"
+          onclick="let details=this.closest('.project').querySelector('.project-details'); details.classList.toggle('hidden'); this.textContent=(details.classList.contains('hidden')?'Show Details':'Hide Details');">
+    Show Details
+  </button>
+{% endif %}
+
+    <a href="{{ site.github }}/{{ include.repo }}" target="_blank"
+       rel="noopener noreferrer" class="project-toggle">
+      View on GitHub
+    </a>
+  </div>
+
+  {% if include.details %}
+    <div class="project-details hidden">
+      <p>{{ include.details }}</p>
+    </div>
+  {% endif %}
+</section>
+<hr>
