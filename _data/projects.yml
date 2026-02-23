@@ -2,16 +2,34 @@
   teaser: "PSUserMigrate is a PowerShell tool that automates user environment migration, making workstation refreshes, break/fix scenarios, and user migrations faster and safer."
   repo: "PSUserMigrate"
   details: |
-    PSUserMigrate captures and restores user settings including browsers, Wi-Fi profiles, VPNs, 
-    Outlook signatures, mapped drives, printers, and Sticky Notes, on the same or another machine.
-    It supports selective component capture, optional AES-256 ZIP encryption via 7-Zip, automatic
-    7-Zip installation if needed, and generates a migration manifest for auditing. Designed for 
-    helpdesk and field use, it reduces operational overhead while ensuring consistent, recoverable migrations.
+    PSUserMigrate captures and restores user settings including browsers, Wi-Fi profiles,
+    VPNs, Outlook signatures, mapped drives, printers, and Sticky Notes, on the same or
+    another machine.
+    
+    It supports selective component capture, optional AES-256 ZIP encryption via 7-Zip,
+    automatic 7-Zip installation if needed, and generates a migration manifest for auditing.
+    
+    Designed for helpdesk and field use, it reduces operational overhead while 
+    ensuring consistent, recoverable migrations.
 
 - name: SecureWinRM
   teaser: "SecureWinRM is a PowerShell module that automates hardened WinRM configuration."
   repo: "SecureWinRM"
   details: |
     SecureWinRM configures Windows Remote Management with opinionated security defaults,
-    including HTTPS-only transport and strong authentication. It prevents insecure WinRM
-    configurations from being introduced during automation or system setup.
+    including HTTPS-only transport and strong authentication.
+    
+    It prevents insecure WinRM configurations from being introduced during automation
+    or system setup.
+
+- name: van Emde Boas Tree (veb_tree.py)
+  teaser: "Implemented a van Emde Boas tree with O(log log u) operations; merged into a 25k+ star algorithms repository."
+  external_url: "https://github.com/keon/algorithms"
+  contribution_url: "https://github.com/keon/algorithms/pull/2722"
+  details: |
+    Authored veb_tree.py, a production-quality van Emde Boas tree supporting
+    O(log log u) insert, delete, successor, and member queries, and O(1) min/max.
+
+    Implementation was reviewed and merged upstream into a widely used
+    algorithms repository (25k+ stars), demonstrating code correctness,
+    production readiness, and adherence to external contribution standards.

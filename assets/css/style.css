@@ -112,18 +112,18 @@ a:hover {
     color: #1a1e38;
 }
 
+/* Detailed text styling */
+.project-details {
+    background-color: rgba(55, 63, 108, 0.85);
+    padding: 1em;
+    margin-top: 0.5em;
+    border-radius: 4px;
+}
+
 
 /* Hidden details */
 .hidden {
     display: none;
-}
-
-/* Detailed text styling */
-.project-details p {
-    font-size: 0.9rem;
-    font-style: italic;
-    color: #cccccc;
-    line-height: 1.4;
 }
 
 /* --- Responsive Adjustments --- */
