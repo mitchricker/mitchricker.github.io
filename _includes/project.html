@@ -5,21 +5,37 @@
 
   <div class="project-buttons">
     {% if include.details %}
-  <button class="project-toggle"
-          onclick="let details=this.closest('.project').querySelector('.project-details'); details.classList.toggle('hidden'); this.textContent=(details.classList.contains('hidden')?'Show Details':'Hide Details');">
-    Show Details
-  </button>
-{% endif %}
+      <button class="project-toggle"
+              onclick="let details=this.closest('.project').querySelector('.project-details'); details.classList.toggle('hidden'); this.textContent=(details.classList.contains('hidden')?'Show Details':'Hide Details');">
+        Show Details
+      </button>
+    {% endif %}
 
-    <a href="{{ site.github }}/{{ include.repo }}" target="_blank"
-       rel="noopener noreferrer" class="project-toggle">
-      View on GitHub
-    </a>
+    {% if include.repo %}
+      <a href="{{ site.github }}/{{ include.repo }}" target="_blank"
+         rel="noopener noreferrer" class="project-toggle">
+        View on GitHub
+      </a>
+    {% endif %}
+
+    {% if include.external_url %}
+      <a href="{{ include.external_url }}" target="_blank"
+         rel="noopener noreferrer" class="project-toggle">
+        View Repository
+      </a>
+    {% endif %}
+
+    {% if include.contribution_url %}
+      <a href="{{ include.contribution_url }}" target="_blank"
+         rel="noopener noreferrer" class="project-toggle">
+        View My Contribution
+      </a>
+    {% endif %}
   </div>
 
   {% if include.details %}
     <div class="project-details hidden">
-      <p>{{ include.details }}</p>
+      <pre>{{ include.details }}</pre>
     </div>
   {% endif %}
 </section>
