@@ -49,6 +49,7 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+    padding-bottom: 50px;
 }
 
 section {
@@ -60,8 +61,14 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 1.2;
+
     text-align: center;
-    padding: 5px;
     background-color: rgba(0, 0, 0, 0.7);
     border-top: 1px solid #444;
 }
@@ -144,4 +151,21 @@ nav a.active {
   background-color: rgba(80, 250, 123, 0.2);
   border-radius: 4px;
   padding: 2px 4px;
+}
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.post-nav .prev {
+  text-align: left;
+}
+
+.post-nav .next {
+  text-align: right;
+  margin-left: auto;
 }
