@@ -4,7 +4,6 @@ title: "Welcome to My Blog!"
 date: 2026-06-15 12:00:00 -0400
 categories: misc
 ---
-
 ## Hello World
 
 Welcome to my corner of the internet.
